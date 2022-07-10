@@ -6,7 +6,6 @@ class DataController {
       let arr = [];
 
       const getTodayData = await service.getTodayData();
-      console.log(getTodayData);
 
       for (let i = 0; i < getTodayData.length; i++) {
         arr.push(getTodayData[i].Cur_ID)
