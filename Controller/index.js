@@ -19,6 +19,8 @@ class DataController {
         prevData: getPrevData,
         dynamicData: getDynamicData
       }
+
+      console.log(groupData);
       return res.json(groupData)
     } catch (error) {
       return res.status(400).json(`${error.message}`)
